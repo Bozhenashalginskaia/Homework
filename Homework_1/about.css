@@ -1,0 +1,185 @@
+body
+{
+    background-color: white;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.calc{
+    margin: 50px auto;
+    width: 300px;
+    height: 500px;
+    border: 1px solid wheat;
+    border-radius: 20px;
+    background: #F6E3C5;
+    color: #fff;
+    font-family: Arial, serif;
+    padding: 18px;
+    box-shadow: 4px 4px 4px #4CACBC;
+}
+
+.calc-screen{
+    height: 125px;
+    padding: 10px;
+    display:  grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 25px;
+}
+
+.calc-screen p {
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas:
+"ac plus-minus percent division"
+    "seven eigth nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn.zero{
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.btn:hover{
+    filter: brightness(120%);
+}
+.btn:active{
+    filter: brightness(90%);
+}
+
+.btn.bg-grey {
+    background: #A0D995;
+}
+
+.btn.bg-orange {
+    background: #4CACBC;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0px;
+}
+.header{
+    display: block;
+    margin: 10px;
+    text-align: center;
+    background-color: gray;
+    padding: 15px;
+    color: white;
+
+}
+
+.title{
+    font-family:"Times New Roman";
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+
+
+}
+nav{
+    left: 0px;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box; /*padding перестают увеличивать размер блока*/
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+}
+.menu{
+    margin: 35px 30px 10px 10px;
+    list-style: none;
+    top: 10px;
+    right: 100px;
+}
+li{
+    margin: 10px 20px;
+    display: inline;
+    justify-content: center;
+
+}
+a {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+
+}
+a:hover{
+    color:grey;
+    transition: background-color .2s ease;
+}
+.wrapper{
+    margin: 20px 30px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+}
+p{
+    padding: 10px 2px 5px 10px;
+    margin: 4px 4px;
+    font-size: 20px;
+}
+aside{
+    width: 300px;
+    float: right;
+    background-color: gray;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+}
+section{
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.sectionWrapper{
+    display: flex;
+}
+.text_aside{
+    margin: 20px;
+}
+footer
+{
+    clear: both;
+    color: white;
+    background-color: gray;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+.aside_left{
+    display: flex;
+    flex-direction: column;
+}
